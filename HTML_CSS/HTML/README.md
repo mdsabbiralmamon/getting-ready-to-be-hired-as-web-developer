@@ -1,27 +1,6 @@
-<style>
-  .header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
-  }
+# Essential HTML5 Interview Questions
 
-  .footer {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
-</style>
-
-<div class="header">
-  <h1>Essential HTML5 Interview Questions</h1>
-</div>
+---
 
 ## 1. What does HTML stand for and what is its purpose?
 
@@ -68,6 +47,6 @@
 
 </details>
 
-<div class="footer">
-  <p>&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
-</div>
+---
+
+&copy; 2024 getting ready for hired as an web developer. All rights reserved.
