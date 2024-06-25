@@ -1,7 +1,5 @@
 # Essential HTML5 Interview Questions
 
----
-
 ## 1. What does HTML stand for and what is its purpose?
 
 <details>
@@ -46,7 +44,5 @@
   - **Advertising & Media**: HTML5's advanced media handling tools make it the standard for online ads and multimedia content.
 
 </details>
-
----
 
 &copy; 2024 getting ready for hired as an web developer. All rights reserved.
