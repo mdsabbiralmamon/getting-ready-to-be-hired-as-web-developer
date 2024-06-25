@@ -1,11 +1,34 @@
-## Essential HTML5 Interview Questions
+<style>
+  .header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
 
-### 1. What does HTML stand for and what is its purpose?
+  .footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+</style>
+
+<div class="header">
+  <h1>Essential HTML5 Interview Questions</h1>
+</div>
+
+## 1. What does HTML stand for and what is its purpose?
 
 <details>
-  <summary>Click to expand the answer</summary>
-  
-  HTML, or HyperText Markup Language, is the standard language used for creating web pages and applications. As of 2024, HTML5 remains the latest version, introducing several new elements and attributes to enhance user experience and software application standards.
+  <summary style="font-size: 18px; font-weight: bold; color: #007BFF; cursor: pointer;">Click to expand the answer</summary>
+
+  HTML, or **HyperText Markup Language**, is the standard language used for creating web pages and applications. As of 2024, HTML5 remains the latest version, introducing several new elements and attributes to enhance user experience and software application standards.
 
   ### Purpose of HTML
 
@@ -44,3 +67,7 @@
   - **Advertising & Media**: HTML5's advanced media handling tools make it the standard for online ads and multimedia content.
 
 </details>
+
+<div class="footer">
+  <p>&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
+</div>
