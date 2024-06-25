@@ -1,4 +1,4 @@
-# Essential HTML5 Interview Questions
+<h1 style="text-align: center; border: 2px solid Blue; border-radius: 5px; padding: 4px; background-color: #337DFF; color:#fff">Essential HTML5 Interview Questions</h1>
 
 ## 1. What does HTML stand for and what is its purpose?
 
@@ -45,4 +45,4 @@
 
 </details>
 
-&copy; 2024 getting ready for hired as an web developer. All rights reserved.
+<p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
