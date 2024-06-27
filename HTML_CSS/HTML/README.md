@@ -45,4 +45,83 @@
 
 </details>
 
+## 2 Basic Structure of an HTML Document
+
+<details>
+<summary>Click to expand the detailed explanation</summary>
+
+HyperText Markup Language (HTML) serves as the backbone of web content, defining its structure and semantics. Here's an overview of the fundamental elements of an HTML document.
+
+#### Document Type Declaration (DOCTYPE)
+
+The Document Type Declaration (DOCTYPE) is an instruction to the web browser about what version of HTML the page is written in. For HTML5, the declaration is:
+
+```html
+<!DOCTYPE html>
+```
+
+This declaration indicates that the document is an HTML5 document.
+
+#### HTML Element
+
+The `<html>` element is the root element of an HTML page. It encompasses the entire content, both head and body sections.
+
+```html
+<html>
+    <!-- Head and Body Sections Are Nested Inside -->
+</html>
+```
+
+#### Head Section
+
+The head section provides meta-information about the document. It isn't displayed in the web browser itself but serves various other purposes, from providing a title to linking external resources.
+
+```html
+<head>
+    <!-- Title and Meta-Tags, Styles, Scripts, etc. -->
+</head>
+```
+
+##### Title Element
+
+The `<title>` element specifies the document's title, which is displayed in the browser's title bar or tab.
+
+```html
+<title>Your Page Title</title>
+```
+
+#### Body Section
+
+The body section encapsulates the document's visible content—what users see and interact with.
+
+```html
+<body>
+    <!-- Content Visible to Users: Headings, Paragraphs, Images, etc. -->
+</body>
+```
+
+#### Example of a Basic HTML Document
+
+Combining all the elements, a basic HTML document looks like this:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+    <!-- Other meta tags, styles, scripts -->
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a basic HTML document.</p>
+    <!-- Other content: images, links, etc. -->
+</body>
+</html>
+```
+
+This structure is the foundation of any HTML document, enabling the creation of structured, well-formatted web pages.
+
+</details>
+
+
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
