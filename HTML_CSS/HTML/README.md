@@ -45,7 +45,7 @@
 
 </details>
 
-## 2 Basic Structure of an HTML Document
+## 2. Basic Structure of an HTML Document
 
 <details>
 <summary>Click to expand the detailed explanation</summary>
@@ -123,5 +123,119 @@ This structure is the foundation of any HTML document, enabling the creation of 
 
 </details>
 
+## 3. What do DOCTYPE and html lang attributes do?
+
+<details>
+<summary>Click to view answer</summary>
+
+**Document Type (DOCTYPE) and the lang attribute play crucial roles in our webpages.**
+
+**DOCTYPE: Defining Document Type and Validation Mode**
+- **Purpose**: Specifies the HTML or XHTML version used in the document. Identifies the parsing method and algorithm for the web browser, affecting consistency.
+- **Code Example**: The `<!DOCTYPE>` declaration is placed at the very top of the HTML file, even before the `<html>` tag begins.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <!-- Content -->
+  </body>
+</html>
+```
+
+**Lang Attribute: Language Specification**
+- **Purpose**: The `lang` attribute, present in the HTML tag, specifies the primary language used in the document. Its value is a primary language subtag as defined in RFC 5646 (BCP 47) and it can include a valid language code, a valid language code followed by a valid region code, or simply "und" for unspecified language.
+- **Code Example**:
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>This is a demo page.</p>
+  </body>
+</html>
+```
+
+</details>
+
+## 4. What is the difference between head and body tags?
+
+<details>
+<summary>Click to view answer</summary>
+
+**While the `<head>` and `<body>` tags are fundamental to every HTML document, they serve distinct purposes and are located in separate areas of the web page.**
+
+**Key Distinctions**
+1. **Role and Content**
+   - **Head**: Houses meta-information, such as document title, character encoding, and stylesheets, all of which are essential for page setup but not visible to the user.
+   - **Body**: Contains the bulk of visible content, including text, images, videos, links, and more.
+2. **Placement in the HTML File**
+   - **Head**: Precedes the body and provides setup before actual content is rendered.
+   - **Body**: Follows the head section and encompasses all visible content.
+3. **Common Elements in Each Section**
+   - **Head**: Typically links to CSS files or may have inline CSS, contains the document title, any JavaScript reference, character set declaration, and meta tags.
+   - **Body**: Holds structural components like headers, navbars, articles, sections, and the footer, along with visual content like images and visible text.
+
+**Visual Representation in the HTML File**
+
+**Head Section:**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!-- Content Here -->
+  </body>
+</html>
+```
+
+**Body Section:**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Recent Posts</h2>
+      <article>
+        <h3>Post Title</h3>
+        <p>Post content goes here.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 MySite</p>
+    </footer>
+  </body>
+</html>
+```
+
+</details> 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
