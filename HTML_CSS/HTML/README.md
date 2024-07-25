@@ -525,4 +525,46 @@ Ensure to validate and clear these implementations with your SEO and localizatio
 
 </details>
 
+## 10. What are data-* attributes and when should they be used?
+
+<details>
+<summary>Click to view answer</summary>
+
+Data attributes in HTML5, often referred to as data-* attributes, help embed custom data within HTML elements. This presents a powerful tool for web developers, facilitating streamlined JavaScript and CSS operations.
+
+### Core Benefits
+- **Accessibility**: Data attributes are easily accessible through the `dataset` API in JavaScript.
+- **Flexibility**: Useful when content served by the backend cannot always be assumed to be JSON encoded, shortened, or have specific formatting.
+- **Data Isolation**: Helps in better maintenance of web documents by defining clear roles within HTML.
+
+### Code Example: Using Data Attributes
+**HTML:**
+
+```html
+<div id="user" data-name="John Doe" data-age="25"></div>
+```
+
+**JavaScript:**
+
+```html
+<script>
+  const userDiv = document.getElementById('user');
+  console.log(userDiv.dataset.name);  // Output: "John Doe"
+  console.log(userDiv.dataset.age);   // Output: "25"
+</script>
+```
+
+### Appropriate Use-Cases
+- **Custom Content for DOM Elements**: Attach extra information or configuration settings exclusively relevant to an HTML element.
+  - **Example**: A `div` may have a `data-show-tooltip` attribute set to `true` to indicate it should display a tooltip.
+  
+- **Interactivity Configuration**: Useful when working with user-made widgets, specifying how they behave in a structured, intended manner.
+  - **Example**: Individual `div` or section blocks having interactivity toggles or categories.
+  
+- **E-Commerce & Web Products**: Store product-specific IDs or additional details as they pertain to the DOM representation of a product in a catalog.
+  
+- **Styling Signifiers**: Leverage data attributes in CSS for different types of styling like category colors, hover effects, or even in JavaScript-based CSS declarations.
+
+</details>
+
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
