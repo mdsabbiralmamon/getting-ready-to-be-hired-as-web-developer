@@ -443,4 +443,86 @@ Comments ensure clear code comprehension and can be used for:
 
 </details>
 
+## 9. How do you serve your page in multiple languages?
+
+<details>
+<summary>Click to view answer</summary>
+
+To serve web pages in multiple languages effectively, follow these best practices:
+
+### Language Tag
+
+Use the `lang` attribute on the `<html>` tag to indicate the language of the content. This improves accessibility and search engine performance.
+
+**Example:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+  </head>
+  <body>
+    <!-- Page content here -->
+  </body>
+</html>
+```
+
+### Common Language Codes
+
+- **ISO 639-1**: Two-letter codes, e.g., "en" for English, "es" for Spanish.
+- **ISO 639-2/3**: Three to four-letter codes, e.g., "por" for Portuguese.
+
+For dialects or region-specific content, use a hyphen followed by an **ISO 3166-1 alpha-2** country code:
+
+- "en-GB" for British English
+- "es-ES" for Spanish as spoken in Spain
+- "pt-BR" for Brazilian Portuguese
+- "pt-PT" for European Portuguese
+
+**Example:**
+
+```html
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>
+  </head>
+  <body>
+    <!-- Contenido de la página aquí -->
+  </body>
+</html>
+```
+
+### SEO Considerations
+
+To improve SEO for multi-language content, follow these practices:
+
+1. **Language-Specific URLs**: Assign a unique URL for each language version.
+    - `example.com/en-US/about` for American English.
+    - `example.com/es-MX/sobre` for Mexican Spanish.
+
+2. **Human-Readable URLs**: Use descriptive and language-specific URLs to effectively communicate the language and content topic.
+
+3. **Hreflang Tags**: Use `<link rel="alternate" hreflang="x" href="URL">` in the `<head>` section to indicate language versions to search engines.
+
+**Example:**
+
+```html
+<head>
+  <link rel="alternate" hreflang="en-US" href="https://example.com/en-US/about">
+  <link rel="alternate" hreflang="es-MX" href="https://example.com/es-MX/sobre">
+</head>
+```
+
+### AI-Clearance Required
+
+Ensure to validate and clear these implementations with your SEO and localization strategy, as effective multi-language support relies heavily on precise content and SEO considerations.
+
+</details>
+
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
