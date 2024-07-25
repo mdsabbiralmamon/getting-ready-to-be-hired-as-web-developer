@@ -567,4 +567,251 @@ Data attributes in HTML5, often referred to as data-* attributes, help embed cus
 
 </details>
 
+## 11. What is the difference between `<b>` and `<strong>` tags?
+
+<details>
+<summary>Click to view answer</summary>
+
+The `<b>` and `<strong>` tags are both used for text emphasis in HTML, but they have different semantic meanings.
+
+### Bold vs. Strong
+- **The `<b>` tag**: Used to make the text bold, primarily for visual styling.
+- **The `<strong>` tag**: Semantically emphasizes the text, indicating its importance.
+
+### Semantic Importance
+- **The `<strong>` tag**: Provides better context for components like screen readers, browsers, and search engines, enhancing the user experience or understanding of the content.
+
+### Code Example: `<b>` vs. `<strong>`
+**HTML:**
+
+```html
+<p>
+  <b>Caution</b>: This action cannot be undone.
+  <br>
+  <strong>Urgent Notice!</strong> Please save your work before proceeding.
+</p>
+```
+
+**Output:**
+
+Caution: This action cannot be undone.  
+**Urgent Notice!** Please save your work before proceeding.
+
+### General Best Practice
+- **Visual Styling**: Typically left to CSS. Use `<b>` with caution, if at all, as it becomes redundant due to CSS's wide adoption.
+- **Semantic Tags**: Using `<strong>` provides context, clarity, and accessibility to the content.
+
+</details>
+
+## 12. When would you use `<em>` over `<i>`, and vice versa?
+
+<details>
+<summary>Click to view answer</summary>
+
+### When to Use `<em>`
+- **Purpose**: The `<em>` tag italicizes the text by default and should be used when emphasis is needed.
+- **Example**: Interactive instructions.
+
+**HTML:**
+
+```html
+<p><strong>Press</strong> <em>Enter</em> to submit.</p>
+```
+
+### When to Use `<i>`
+- **Purpose**: The `<i>` tag is used for styling text as italic, but it's often better to use semantic HTML or CSS for more explicit meaning.
+- **Example**: Italics for stylistic purposes without emphasis.
+
+**HTML:**
+
+```html
+<p>His <i>anger</i> was palpable.</p>
+```
+
+### Combining with CSS
+- **Enhanced Styling**: Use `<em>` with CSS for additional styling.
+
+**HTML:**
+
+```html
+<p>His <em style="background-color: yellow; color: red;">anger</em> was palpable.</p>
+```
+
+</details>
+
+## 13. What is the purpose of `<small>`, `<s>`, and `<mark>` tags?
+
+<details>
+<summary>Click to view answer</summary>
+
+### `<small>`
+- **Purpose**: Indicates that the enclosed text is of lesser importance. Typically used for fine print, legal disclaimers, copyright notices, etc.
+- **Example**: 
+
+**HTML:**
+
+```html
+<footer>
+  <small>&copy; 2022 Company Name</small>
+</footer>
+```
+
+### `<s>`
+- **Purpose**: Stands for "strike." It visually strikes out its content. Often replaced by `<del>` for "deleted" content.
+- **Example**: 
+
+**HTML:**
+
+```html
+<p>Your discount code is: <s>EXPIRED123</s></p>
+```
+
+**Output:**
+
+Your discount code is: ~~EXPIRED123~~
+
+### `<mark>`
+- **Purpose**: Used to highlight or set apart text without specifying any additional semantic information.
+- **Example**:
+
+**HTML:**
+
+```html
+<p>Important: Please <mark>schedule your appointment</mark> at least 48 hours in advance.</p>
+```
+
+**Output:**
+
+Important: Please <mark>schedule your appointment</mark> at least 48 hours in advance.
+
+</details>
+
+## 14. What are semantic HTML tags and why are they important?
+
+<details>
+<summary>Click to view answer</summary>
+
+### Benefits of Semantic Tags
+- **SEO and Accessibility**: Improves search engine ranking and ensures accessibility for all users, including those with disabilities.
+- **Consistent Structure**: Establishes a cohesive layout, vital for large websites or platforms.
+- **Relevance to Bots and Crawlers**: Search engines dissect web pages more accurately when content is correctly labeled.
+- **Content Division**: Segregating content by meaning makes the document more understandable and maintainable.
+
+### Common Semantic Tags
+- `<p>`: Paragraph.
+- `<h1> - <h6>`: Headings, with levels 1 (highest) to 6 (lowest).
+- `<ul>` / `<ol>`: Unordered or ordered list.
+- `<li>`: List item inside a list.
+- `<a>`: Anchor, used for links.
+- `<img>`: An image.
+- `<figure>` / `<figcaption>`: For a figure such as an image, with accompanying caption.
+
+### Necessary vs. Optional Tags
+- **Essential Tags**: `<header>`, `<footer>`, etc., indicate crucial sections.
+- **Optional Tags**: `<article>`, `<section>`, etc., used based on the website's nature or page's segregation needs.
+
+### Code Example: Before vs. After Semantic HTML
+
+**Before Semantic HTML:**
+
+```html
+<div class="nav">
+    <div class="logo">
+        <a href="#">Logo</a>
+    </div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="image">
+        <img src="image.jpg" alt="A beautiful landscape">
+    </div>
+    <div class="content">
+        <h3>Welcome</h3>
+        <p>Some welcome text here.</p>
+    </div>
+</div>
+<div class="footer">
+    <p>© 2022 Company Name</p>
+</div>
+```
+
+**After Implementing Semantic Tags:**
+
+```html
+<header>
+    <div class="logo">
+        <a href="#">Logo</a>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <figure>
+        <img src="image.jpg" alt="A beautiful landscape">
+        <figcaption>A beautiful landscape</figcaption>
+    </figure>
+    <section>
+        <h1>Welcome</h1>
+        <p>Some welcome text here.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2022 Company Name</p>
+</footer>
+```
+
+</details>
+
+## 15. How do you create a paragraph or a line break in HTML?
+
+<details>
+<summary>Click to view answer</summary>
+
+### Paragraphs in HTML
+- **Tag**: `<p>`
+- **Purpose**: Creates a paragraph, with default browser styling adding spacing to the top and bottom of each element.
+
+**Syntax:**
+
+```html
+<p>
+    This is an example of a paragraph. The text enclosed within the &lt;p&gt; tags represents a single paragraph.
+</p>
+```
+
+### Line Breaks in HTML
+- **Tag**: `<br>`
+- **Purpose**: Inserts a simple line break without requiring a closing tag.
+
+**Syntax:**
+
+```html
+First Line<br>Second Line
+```
+
+### Multi-line Text Elements
+- **Tag**: `<textarea>`
+- **Purpose**: Allows input of several lines of text. Does not auto-format for paragraphs.
+
+**Syntax:**
+
+```html
+<textarea rows="4" cols="50">
+This is a multi-line text area.
+It doesn't automatically create separate paragraphs.
+Text wraps based on dimensions supplied.
+</textarea>
+```
+
+</details>
+
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
