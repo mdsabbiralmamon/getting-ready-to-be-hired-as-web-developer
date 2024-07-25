@@ -882,5 +882,98 @@ The `<a>` tag is a versatile element in HTML that allows you to create hyperlink
 </details>
 
 
+## 17. What is the difference between relative and absolute URLs?
+
+<details>
+  <summary>Click to view answer</summary>
+
+URLs (Uniform Resource Locators) are used to specify addresses on the web. They can be classified into two types: **relative URLs** and **absolute URLs**.
+
+#### **Absolute URLs**
+
+An absolute URL provides the complete address of a resource, including the protocol (e.g., `http`, `https`, `ftp`), domain name, and optionally the path and query parameters.
+
+**Example:**
+```html
+<a href="https://www.example.com/path/to/resource">Visit Example</a>
+```
+
+**Key Points:**
+- **Includes the protocol:** Specifies whether the resource is accessed over HTTP, HTTPS, etc.
+- **Includes the domain name:** The full domain (e.g., `www.example.com`).
+- **Full path:** Can include the path, query parameters, and fragments.
+
+**Usage:**
+- Used when linking to resources on a different website or domain.
+- Ensures that the link will work regardless of where the HTML document is located.
+
+#### **Relative URLs**
+
+A relative URL provides a path to a resource relative to the location of the current document. It does not include the protocol or domain name.
+
+**Example:**
+```html
+<a href="/path/to/resource">Visit Resource</a>
+```
+
+**Key Points:**
+- **Relative to the current domain:** The URL assumes the domain and protocol of the current document.
+- **Path options:**
+  - **Root-relative URL:** Starts with a `/`, which refers to the root of the domain.
+    ```html
+    <a href="/images/logo.png">Logo</a>
+    ```
+  - **Document-relative URL:** Specifies a path relative to the current document’s location.
+    ```html
+    <a href="images/logo.png">Logo</a>
+    ```
+  - **Parent-relative URL:** Uses `..` to navigate up one level in the directory hierarchy.
+    ```html
+    <a href="../other-page.html">Go Up One Level</a>
+    ```
+
+**Usage:**
+- Useful for linking to resources within the same website or directory structure.
+- Can make site management easier when the website is moved or when the domain changes, as the internal links don’t need to be updated.
+
+#### **Comparison**
+
+- **Portability:**
+  - **Absolute URLs** are less flexible when changing domains or protocols.
+  - **Relative URLs** adapt more easily to changes in domain or directory structure.
+
+- **Efficiency:**
+  - **Absolute URLs** can be more convenient for linking to external sites or resources.
+  - **Relative URLs** are often more manageable within a single site, reducing the need for frequent updates if paths change.
+
+#### **Examples in Context**
+
+1. **Absolute URL:**
+   ```html
+   <a href="https://www.example.com/contact">Contact Us</a>
+   ```
+
+2. **Relative URL (within the same domain):**
+   ```html
+   <a href="contact.html">Contact Us</a>
+   ```
+
+3. **Root-relative URL:**
+   ```html
+   <a href="/about.html">About Us</a>
+   ```
+
+4. **Parent-relative URL:**
+   ```html
+   <a href="../services.html">Our Services</a>
+   ```
+
+### Conclusion
+
+Understanding the difference between relative and absolute URLs helps in structuring and managing links effectively in web development. Absolute URLs provide the complete address, useful for external links, while relative URLs offer a flexible way to link resources within the same site.
+
+</details>
+
+
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
