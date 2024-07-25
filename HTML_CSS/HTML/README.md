@@ -1677,6 +1677,66 @@ These tags help organize content in a meaningful way depending on whether you ne
 
 </details>
 
+## 28. Can lists be nested in HTML? If so, how?
+
+<details>
+  <summary>Click to view answer</summary>
+
+Yes, lists can indeed be nested in HTML, which allows you to create hierarchical structures. Here’s how you can do it:
+
+1. **Nested Ordered List:**
+   - **Description:** You can place an ordered list (`<ol>`) inside an `<li>` of another ordered list. This creates a sub-list under a main list item.
+   - **Example:**
+     ```html
+     <ol>
+         <li>Main item
+             <ol>
+                 <li>Sub-item 1</li>
+                 <li>Sub-item 2</li>
+             </ol>
+         </li>
+         <li>Another main item</li>
+     </ol>
+     ```
+   - **Explanation:** In this example, the sub-items are part of a nested ordered list within the first main item.
+
+2. **Nested Unordered List:**
+   - **Description:** Similarly, you can place an unordered list (`<ul>`) inside an `<li>` of another unordered list. This creates a bulleted sub-list.
+   - **Example:**
+     ```html
+     <ul>
+         <li>Main item
+             <ul>
+                 <li>Sub-item A</li>
+                 <li>Sub-item B</li>
+             </ul>
+         </li>
+         <li>Another main item</li>
+     </ul>
+     ```
+   - **Explanation:** The nested unordered list is embedded within an `<li>` of the main unordered list, resulting in a hierarchical bullet point structure.
+
+3. **Nested Description List:**
+   - **Description:** A description list (`<dl>`) can also be nested. For instance, you can have a description list within a definition description (`<dd>`) to provide more detailed information.
+   - **Example:**
+     ```html
+     <dl>
+         <dt>Main Term</dt>
+         <dd>Description of the main term.
+             <dl>
+                 <dt>Sub-term</dt>
+                 <dd>Description of sub-term.</dd>
+             </dl>
+         </dd>
+     </dl>
+     ```
+   - **Explanation:** In this example, a nested description list is included within the description of a main term, allowing for further detail.
+
+**Summary:**
+Nesting lists involves placing one list within an `<li>` of another list. This allows you to create multi-level lists with ordered, unordered, or description items, effectively organizing content in a hierarchical format.
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
