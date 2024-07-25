@@ -1318,6 +1318,109 @@ Effective `alt` text improves both accessibility and search engine optimization,
 
 </details>
 
+## 23. What image formats are supported by web browsers?
+
+<details>
+  <summary>Click to view answer</summary>
+
+Web browsers support a variety of image formats, each with its own characteristics and use cases. Here are the most commonly supported image formats:
+
+#### **1. JPEG (Joint Photographic Experts Group)**
+
+- **File Extension:** `.jpg` or `.jpeg`
+- **Characteristics:**
+  - **Lossy Compression:** Reduces file size by compressing image data, which can result in a loss of quality.
+  - **Best For:** Photographs and images with gradients.
+- **Browser Support:** Widely supported across all major browsers.
+
+**Example:**
+```html
+<img src="image.jpg" alt="Sample JPEG Image">
+```
+
+#### **2. PNG (Portable Network Graphics)**
+
+- **File Extension:** `.png`
+- **Characteristics:**
+  - **Lossless Compression:** Maintains image quality by compressing data without loss.
+  - **Transparency Support:** Allows for transparent backgrounds.
+  - **Best For:** Graphics, logos, and images requiring transparency.
+- **Browser Support:** Fully supported across all major browsers.
+
+**Example:**
+```html
+<img src="image.png" alt="Sample PNG Image">
+```
+
+#### **3. GIF (Graphics Interchange Format)**
+
+- **File Extension:** `.gif`
+- **Characteristics:**
+  - **Lossless Compression:** Maintains image quality but supports a limited color palette (256 colors).
+  - **Animation Support:** Allows for simple animations.
+  - **Best For:** Simple graphics, animations, and icons.
+- **Browser Support:** Widely supported across all major browsers.
+
+**Example:**
+```html
+<img src="animation.gif" alt="Sample GIF Animation">
+```
+
+#### **4. SVG (Scalable Vector Graphics)**
+
+- **File Extension:** `.svg`
+- **Characteristics:**
+  - **Vector Format:** Scalable to any size without loss of quality.
+  - **Text-Based:** Images are defined in XML format, allowing for easy manipulation and styling with CSS.
+  - **Best For:** Logos, icons, and illustrations.
+- **Browser Support:** Fully supported across all major browsers.
+
+**Example:**
+```html
+<img src="graphic.svg" alt="Sample SVG Image">
+```
+
+#### **5. WebP**
+
+- **File Extension:** `.webp`
+- **Characteristics:**
+  - **Lossy and Lossless Compression:** Offers a balance between quality and file size.
+  - **Transparency and Animation:** Supports both transparency and animation.
+  - **Best For:** Web images requiring a balance between quality and file size.
+- **Browser Support:** Supported by most modern browsers, but may require fallback for older browsers.
+
+**Example:**
+```html
+<img src="image.webp" alt="Sample WebP Image">
+```
+
+#### **6. BMP (Bitmap Image File)**
+
+- **File Extension:** `.bmp`
+- **Characteristics:**
+  - **Uncompressed or Simple Compression:** Generally large file sizes due to minimal compression.
+  - **Best For:** High-quality images where file size is not a concern.
+- **Browser Support:** Supported by most modern browsers, but not commonly used due to large file sizes.
+
+**Example:**
+```html
+<img src="image.bmp" alt="Sample BMP Image">
+```
+
+### Summary
+
+**Commonly Supported Image Formats:**
+1. **JPEG (.jpg, .jpeg):** For photographs and images with gradients.
+2. **PNG (.png):** For graphics, logos, and images with transparency.
+3. **GIF (.gif):** For simple graphics and animations.
+4. **SVG (.svg):** For scalable vector graphics and illustrations.
+5. **WebP (.webp):** For balanced quality and file size with support for transparency and animation.
+6. **BMP (.bmp):** For high-quality images with large file sizes.
+
+Ensure you use appropriate formats based on your image requirements and consider providing fallbacks for formats with limited browser support.
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
