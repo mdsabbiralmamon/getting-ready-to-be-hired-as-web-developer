@@ -337,6 +337,75 @@ Here is the HTML code:
 
 </details>
 
+## 7. How do you link a JavaScript file to an HTML document?
+
+<details>
+<summary>Click to view answer</summary>
+
+To link a JavaScript file to an HTML document, you need to use the `<script>` HTML tag. There are two primary ways to do this:
+
+1. **External Script File**: Link a separate JavaScript file to your HTML document.
+2. **Inline Script**: Embed JavaScript code directly within your HTML file.
+
+### External Script File
+
+To use an external JavaScript file, follow these steps:
+
+**Create the JavaScript File**: Save your JavaScript code in a separate file with a `.js` extension. For example, `script.js`.
+
+**Link the JavaScript File to your HTML Document**: Add the following code within the `<head>` or at the end of the `<body>` section of your HTML file.
+
+```html
+<script src="path-to-your-js-file.js"></script>
+```
+
+Replace `path-to-your-js-file.js` with the actual path to your JavaScript file.
+
+**Best Practices**
+- **Placement**: It's good practice to place your `<script>` tags at the end of the `<body>` section, just before the closing `</body>` tag. This ensures that the HTML content loads first, which can improve the website's initial rendering speed.
+- **Syntax**: The HTML5 specification does not require a closing tag for the `<script>` element.
+
+### Inline Script
+
+You can also include JavaScript directly within your HTML file. This is called an "inline script." To do this, encase your JavaScript code within `<script>` tags, like this:
+
+```html
+<script>
+    // Your JavaScript code goes here
+</script>
+```
+
+**Best Practices**
+- **Content Separation**: For better code organization, it's often better to keep your JavaScript in a separate file, especially for larger applications.
+- **Caching**: When using an external JavaScript file, the browser caches the script, which can speed up your site on subsequent visits. However, if the script changes often, this caching can be a problem.
+- **Maintainability and Reusability**: Utilizing an external JavaScript file allows for better code management, reusability, and ease of making updates or fixes across multiple HTML files.
+
+### Example HTML File
+
+Here is the code:
+
+**Implementation: HTML File**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="path-to-your-js-file.js"></script>
+</head>
+<body>
+    <!-- Your content here -->
+    <script>
+        // Inline JavaScript code here.
+    </script>
+</body>
+</html>
+```
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
