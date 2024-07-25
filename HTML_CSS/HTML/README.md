@@ -406,6 +406,41 @@ Here is the code:
 
 </details>
 
+## 8. How do you add a comment in HTML and why would you use them?
 
+<details>
+<summary>Click to view answer</summary>
+
+To add a comment in HTML, wrap it between `<!--` and `-->`.
+
+**Example:**
+
+```html
+<!-- This is a comment -->
+<p>Hello, World!</p>
+```
+
+### Role of Comments in Development
+
+Comments ensure clear code comprehension and can be used for:
+
+1. **Instructions**: Guiding developers on next steps.
+2. **Documentation**: Articulating intricate code segments.
+3. **Debugging**: Temporarily removing portions for bug testing.
+4. **Reminders**: Highlighting sections for later revision.
+
+### Best Practices for Using Comments
+
+1. **Purposeful Clarity**: Comments must explain what the code does, not how. Code and inline comments should clarify how the code works.
+2. **Relevance**: Avoid stating the obvious and focus on unique or complex components.
+3. **Conciseness**: Keep comments brief to reduce visual clutter.
+4. **Regular Maintenance**: Update or remove outdated comments to maintain accuracy.
+
+### When are Comments Unnecessary?
+
+1. **Trivial Cases**: Comments like "wrapper" or "tag" denote the obvious.
+2. **Self-Explanatory Code**: Writing self-descriptive code eliminates the need for specific comments.
+
+</details>
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
