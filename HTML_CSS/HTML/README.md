@@ -1514,6 +1514,69 @@ Image maps enhance interactivity by allowing different parts of an image to link
 
 </details>
 
+## 25. What is the difference between `<svg>` and `<canvas>` elements?
+
+<details>
+  <summary>Click to view answer</summary>
+
+Both `<svg>` and `<canvas>` are HTML elements used for graphics and visualizations, but they have different use cases and characteristics. Here's a comparison of the two:
+
+#### **1. `<svg>` (Scalable Vector Graphics)**
+
+- **Type:** Vector Graphics
+- **Definition:** `<svg>` is used to create and display vector graphics using XML-based markup. Vector graphics are composed of shapes like lines, circles, and polygons defined mathematically.
+- **Usage:** Ideal for creating graphics that need to scale without losing quality, such as logos, icons, and detailed illustrations.
+- **Characteristics:**
+  - **Resolution-Independent:** SVG graphics scale to any size without losing quality.
+  - **DOM Integration:** SVG elements are part of the DOM, which means you can manipulate them using CSS and JavaScript.
+  - **Interactivity:** Supports event handling (e.g., click, hover) directly on SVG elements.
+  - **Animation:** Can be animated using CSS or SMIL (Synchronized Multimedia Integration Language), or with JavaScript libraries.
+  
+  **Example:**
+  ```html
+  <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  </svg>
+  ```
+
+#### **2. `<canvas>`**
+
+- **Type:** Bitmap Graphics
+- **Definition:** `<canvas>` is used for drawing and rendering bitmap graphics dynamically via JavaScript. It provides a space where you can draw and manipulate images or shapes using a scripting language.
+- **Usage:** Suitable for real-time graphics, such as games, simulations, and dynamic visualizations where you need to draw and update graphics on the fly.
+- **Characteristics:**
+  - **Resolution-Dependent:** Bitmap graphics are pixel-based, which means they can lose quality when scaled.
+  - **No Direct DOM Integration:** The `<canvas>` element itself does not contain graphic elements. Instead, you draw on it using the Canvas API in JavaScript.
+  - **Interactivity:** Requires JavaScript to handle user interactions, drawing operations, and animations.
+  - **Performance:** Can be more efficient for real-time graphics and complex animations because it operates directly on pixels.
+
+  **Example:**
+  ```html
+  <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+  <script>
+      var canvas = document.getElementById('myCanvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = 'red';
+      ctx.beginPath();
+      ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+      ctx.fill();
+  </script>
+  ```
+
+### Summary
+
+**`<svg>`:**
+- **Type:** Vector Graphics
+- **Characteristics:** Scalable, part of the DOM, supports CSS and JavaScript interaction, suitable for static graphics and detailed illustrations.
+
+**`<canvas>`:**
+- **Type:** Bitmap Graphics
+- **Characteristics:** Resolution-dependent, requires JavaScript for drawing and interaction, suitable for real-time graphics and dynamic visualizations.
+
+Choose `<svg>` for graphics that need to scale and maintain quality, and `<canvas>` for dynamic, real-time rendering where performance is key.
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
