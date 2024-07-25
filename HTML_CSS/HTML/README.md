@@ -1178,6 +1178,95 @@ You can optionally specify a custom filename using the `download` attribute.
 
 </details>
 
+## 21. How do you embed images in an HTML page?
+
+<details>
+  <summary>Click to view answer</summary>
+
+To embed images in an HTML page, you use the `<img>` (image) tag. The `<img>` tag does not have a closing tag and includes attributes to specify the image source, alternative text, and other properties.
+
+#### **Basic Syntax**
+
+**Example:**
+```html
+<img src="path/to/image.jpg" alt="Description of the image">
+```
+
+- **`src` Attribute:** Specifies the path to the image file. This can be a relative path, an absolute path, or a URL.
+- **`alt` Attribute:** Provides alternative text that describes the image. This text is displayed if the image cannot be loaded and is also used by screen readers for accessibility.
+
+#### **Attributes**
+
+1. **`src` (Source):** Defines the location of the image file.
+   - **Example:** 
+     ```html
+     <img src="images/photo.jpg" alt="A beautiful scenery">
+     ```
+
+2. **`alt` (Alternative Text):** Describes the content of the image for accessibility and in case the image fails to load.
+   - **Example:**
+     ```html
+     <img src="images/photo.jpg" alt="A beautiful scenery during sunset">
+     ```
+
+3. **`width` and `height`:** Define the dimensions of the image.
+   - **Example:**
+     ```html
+     <img src="images/photo.jpg" alt="A beautiful scenery" width="600" height="400">
+     ```
+
+4. **`title`:** Provides additional information about the image. The text appears as a tooltip when you hover over the image.
+   - **Example:**
+     ```html
+     <img src="images/photo.jpg" alt="A beautiful scenery" title="Sunset view from the mountains">
+     ```
+
+5. **`class` and `id`:** Used for styling the image with CSS or targeting it with JavaScript.
+   - **Example:**
+     ```html
+     <img src="images/photo.jpg" alt="A beautiful scenery" class="responsive" id="sceneryImage">
+     ```
+
+#### **Complete Example**
+
+Here's an example of how to embed an image in an HTML page:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Embedding Example</title>
+    <style>
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Embedding Example</h1>
+    <img src="images/scenery.jpg" alt="A beautiful scenery" title="Scenery during sunset" class="responsive">
+</body>
+</html>
+```
+
+In this example:
+- **`src`** points to `images/scenery.jpg`.
+- **`alt`** provides a description for accessibility.
+- **`title`** gives additional information.
+- **`class`** is used to apply CSS styling.
+
+### Summary
+
+To embed images in an HTML page:
+1. Use the `<img>` tag with the `src` attribute to specify the image file location.
+2. Include the `alt` attribute to describe the image for accessibility.
+3. Optionally use `width`, `height`, `title`, `class`, and `id` attributes for additional functionality and styling.
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
