@@ -975,5 +975,41 @@ Understanding the difference between relative and absolute URLs helps in structu
 </details>
 
 
+## 18. How can you open a link in a new tab?
+
+<details>
+  <summary>Click to view answer</summary>
+
+To open a link in a new tab (or a new window) in HTML, you use the `target` attribute of the `<a>` (anchor) tag. The `target` attribute specifies where to open the linked document.
+
+#### **Using the `target="_blank"` Attribute**
+
+The `target="_blank"` attribute value is used to open the link in a new tab or window.
+
+**Example:**
+```html
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+```
+
+**Key Points:**
+- **`_blank`:** Opens the link in a new tab or window, depending on the browser's settings and user preferences.
+- **Security Consideration:** Using `target="_blank"` can create security vulnerabilities. It’s recommended to use `rel="noopener noreferrer"` in conjunction with `target="_blank"` to mitigate these risks.
+
+**Example with `rel` attribute:**
+```html
+<a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Visit Example</a>
+```
+
+- **`rel="noopener noreferrer"`:**
+  - **`noopener`:** Prevents the new page from accessing the `window.opener` property, which can protect against certain types of attacks.
+  - **`noreferrer`:** Prevents the browser from sending the referring URL to the new page, which can enhance privacy.
+
+### Summary
+
+To open a link in a new tab, add `target="_blank"` to your `<a>` tag. For improved security and privacy, also use `rel="noopener noreferrer"`.
+
+</details>
+
+
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
