@@ -1421,6 +1421,99 @@ Ensure you use appropriate formats based on your image requirements and consider
 
 </details>
 
+## 24. How do you create image maps in HTML?
+
+<details>
+  <summary>Click to view answer</summary>
+
+An image map in HTML allows you to define clickable areas within an image, making it possible to link different parts of an image to different destinations. This is achieved using the `<map>` and `<area>` elements.
+
+#### **Steps to Create an Image Map**
+
+1. **Use the `<img>` Tag to Display the Image**
+
+   First, insert the image you want to use as an image map with the `<img>` tag. Make sure to include the `usemap` attribute, which associates the image with the map.
+
+   **Example:**
+   ```html
+   <img src="map-image.jpg" alt="Map Image" usemap="#image-map">
+   ```
+
+   Here, `usemap="#image-map"` associates the image with a map identified by the `#image-map` value.
+
+2. **Define the Map Using the `<map>` Tag**
+
+   The `<map>` element contains one or more `<area>` elements that define clickable regions within the image. The `name` attribute of the `<map>` tag should match the `usemap` attribute of the `<img>` tag.
+
+   **Example:**
+   ```html
+   <map name="image-map">
+       <!-- Define clickable areas here -->
+   </map>
+   ```
+
+3. **Specify Clickable Areas with the `<area>` Tag**
+
+   The `<area>` tag defines a clickable region within the image map. You can use different shapes and coordinates to define these regions.
+
+   - **Shape:** Defines the shape of the clickable area. Common shapes are `rect` (rectangle), `circle`, and `poly` (polygon).
+   - **Coords:** Specifies the coordinates for the shape.
+   - **Href:** Defines the URL to navigate to when the area is clicked.
+   - **Alt:** Provides alternative text for the area, which is useful for accessibility.
+
+   **Examples:**
+
+   - **Rectangle Shape:**
+     ```html
+     <area shape="rect" coords="34,44,270,350" href="https://www.example.com/part1" alt="Part 1">
+     ```
+
+   - **Circle Shape:**
+     ```html
+     <area shape="circle" coords="200,200,100" href="https://www.example.com/part2" alt="Part 2">
+     ```
+
+   - **Polygon Shape:**
+     ```html
+     <area shape="poly" coords="120,60,180,60,200,120,140,120" href="https://www.example.com/part3" alt="Part 3">
+     ```
+
+#### **Complete Example**
+
+Here’s a complete example of an image map with multiple clickable areas:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+</head>
+<body>
+    <h1>Image Map Example</h1>
+    <img src="map-image.jpg" alt="Map Image" usemap="#image-map">
+
+    <map name="image-map">
+        <area shape="rect" coords="34,44,270,350" href="https://www.example.com/part1" alt="Part 1">
+        <area shape="circle" coords="200,200,100" href="https://www.example.com/part2" alt="Part 2">
+        <area shape="poly" coords="120,60,180,60,200,120,140,120" href="https://www.example.com/part3" alt="Part 3">
+    </map>
+</body>
+</html>
+```
+
+### Summary
+
+To create image maps in HTML:
+1. **Insert the image** with the `<img>` tag and associate it with a map using the `usemap` attribute.
+2. **Define the map** with the `<map>` tag and a `name` attribute that matches the `usemap` value.
+3. **Specify clickable areas** within the map using the `<area>` tag, defining the shape, coordinates, destination URL, and alternative text.
+
+Image maps enhance interactivity by allowing different parts of an image to link to different destinations.
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
