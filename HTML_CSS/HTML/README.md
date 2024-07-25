@@ -2594,6 +2594,141 @@ ify Table Design:**
 
 </details>
 
+## 45. How do you add audio and video to an HTML document?
+
+<details>
+  <summary>Click to view answer</summary>
+
+To add audio and video content to an HTML document, you use the `<audio>` and `<video>` elements, respectively. These elements allow you to embed media files directly into your web pages.
+
+1. **Adding Audio:**
+   - **Purpose:** Embeds audio files, such as music or sound effects.
+   - **Example:**
+     ```html
+     <audio controls>
+         <source src="audiofile.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+     </audio>
+     ```
+   - **Explanation:** The `<audio>` element includes the `controls` attribute to provide play, pause, and volume controls. The `<source>` element specifies the audio file and its MIME type.
+
+2. **Adding Video:**
+   - **Purpose:** Embeds video files, such as movies or tutorials.
+   - **Example:**
+     ```html
+     <video width="640" height="360" controls>
+         <source src="video.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+     </video>
+     ```
+   - **Explanation:** The `<video>` element includes attributes like `width` and `height` to set the dimensions and `controls` for playback options. The `<source>` element specifies the video file and its MIME type.
+
+**Summary:**
+- Use the `<audio>` element for audio files and the `<video>` element for video files.
+- Include the `controls` attribute to provide user controls for playback.
+
+</details>
+
+## 46. What are the attributes of the `<video>` and `<audio>` elements?
+
+<details>
+  <summary>Click to view answer</summary>
+
+The `<video>` and `<audio>` elements come with several attributes that enhance their functionality and user experience.
+
+1. **Common Attributes for Both Elements:**
+   - **`controls`:** Displays playback controls (play, pause, volume) to the user.
+     - **Example:** `<audio controls>` or `<video controls>`
+   - **`autoplay`:** Starts playing the media as soon as it is ready.
+     - **Example:** `<audio autoplay>` or `<video autoplay>`
+   - **`loop`:** Repeats the media when it ends.
+     - **Example:** `<audio loop>` or `<video loop>`
+   - **`muted`:** Mutes the audio of the media.
+     - **Example:** `<audio muted>` or `<video muted>`
+   - **`preload`:** Specifies how the browser should load the media before playback. Values can be `auto`, `metadata`, or `none`.
+     - **Example:** `<audio preload="auto">` or `<video preload="metadata">`
+
+2. **Video-Specific Attributes:**
+   - **`width` and `height`:** Set the dimensions of the video player.
+     - **Example:** `<video width="640" height="360">`
+   - **`poster`:** Defines an image to be shown before the video starts playing.
+     - **Example:** `<video poster="thumbnail.jpg">`
+
+3. **Audio-Specific Attributes:**
+   - **No additional attributes specific to audio** beyond those listed above.
+
+**Summary:**
+- Both `<audio>` and `<video>` support attributes like `controls`, `autoplay`, `loop`, `muted`, and `preload`.
+- The `<video>` element has additional attributes like `width`, `height`, and `poster`.
+
+</details>
+
+## 47. How do you provide subtitles or captions for video content in HTML?
+
+<details>
+  <summary>Click to view answer</summary>
+
+To provide subtitles or captions for video content in HTML, you use the `<track>` element within the `<video>` element. This allows you to include various types of text tracks, such as subtitles, captions, and descriptions.
+
+1. **Using the `<track>` Element:**
+   - **Purpose:** Adds text tracks to a video, including subtitles and captions.
+   - **Attributes:**
+     - **`src`:** Specifies the URL of the track file.
+     - **`kind`:** Specifies the type of track. Common values include `subtitles`, `captions`, `descriptions`, and `chapters`.
+     - **`srclang`:** Specifies the language of the track.
+     - **`label`:** Provides a label for the track, useful for selecting between multiple tracks.
+   - **Example:**
+     ```html
+     <video controls>
+         <source src="video.mp4" type="video/mp4">
+         <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+         <track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish">
+         Your browser does not support the video tag.
+     </video>
+     ```
+   - **Explanation:** The `<track>` element references a WebVTT file (a standard format for text tracks) containing the subtitle or caption text.
+
+**Summary:**
+- Use the `<track>` element within the `<video>` element to add subtitles, captions, or other text tracks.
+- The `kind`, `srclang`, and `label` attributes help define and manage the text tracks.
+
+</details>
+
+## 48. What’s the difference between embedding and linking media?
+
+<details>
+  <summary>Click to view answer</summary>
+
+Embedding and linking media in HTML serve different purposes and have different implications for how media is presented and interacted with on a webpage.
+
+1. **Embedding Media:**
+   - **Purpose:** Integrates media files directly into the HTML document, allowing them to be played or viewed without navigating away from the page.
+   - **How It Works:** Media files are included within the HTML using elements like `<audio>` or `<video>`.
+   - **Example:**
+     ```html
+     <video src="video.mp4" controls></video>
+     ```
+   - **Advantages:**
+     - Provides a seamless user experience.
+     - Allows for direct control over playback within the page.
+
+2. **Linking Media:**
+   - **Purpose:** Provides a hyperlink to the media file, allowing users to download or navigate to the file in a new tab or window.
+   - **How It Works:** Media files are linked using the `<a>` element with the `href` attribute pointing to the file.
+   - **Example:**
+     ```html
+     <a href="document.pdf" download>Download PDF</a>
+     ```
+   - **Advantages:**
+     - Reduces page load time as the media is not embedded directly.
+     - Useful for files that users might want to download or view separately.
+
+**Summary:**
+- **Embedding** integrates media into the page for immediate interaction.
+- **Linking** provides a reference to the media, allowing users to download or view it in a new location.
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
