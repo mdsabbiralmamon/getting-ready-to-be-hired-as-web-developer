@@ -298,6 +298,45 @@ To maintain a robust online presence, focus on high-quality content, user experi
 
 </details>
 
+## 6. How do you link a CSS file to an HTML document?
+
+<details>
+<summary>Click to view answer</summary>
+
+Linking a CSS file to an HTML document is a fundamental step for styling. This is generally done by indicating the CSS file's path in the head section of the HTML file using `<link>` tags.
+
+### HTML Link Tag: `<link>`
+
+HTML uses the `<link>` tag to integrate external resources such as CSS files.
+
+### Syntax
+
+```html
+<link rel="stylesheet" href="path/to/style.css">
+```
+
+- **rel:** Specifies the type of relationship between the current document and the linked file. For CSS, it should be set to "stylesheet".
+- **href:** Points to the location of the external CSS file. This can be via an absolute URL (i.e., http://...) or a relative path to the HTML file.
+- **type:** Supplied for legacy purposes but is not required given the file is a CSS file.
+
+### Code Example: Using the Link Tag
+
+Here is the HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="path/to/style.css">
+</head>
+<body>
+    <!-- Body content -->
+</body>
+</html>
+```
+
+</details>
+
 
 
 <p  style="font-size: 16px; color: #fff; background-color: #337DFF; padding: 8px; text-align:center; border-radius: 5px; margin-top:12px">&copy; 2024 getting ready for hired as an web developer. All rights reserved.</p>
